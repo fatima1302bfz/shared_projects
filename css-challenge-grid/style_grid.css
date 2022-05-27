@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #dae2e9;
+    padding: 10px;
+    width: fit-content
+}
+
+.top-bar {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.card1 .top-bar {
+    color: white
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    border: 1px solid none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 20px;
+    background-color: #f2f2f2;
+    width: 250px;
+    height: 400px;
+}
+
+.container .card1 {
+    background-color: #f4b80d;
+    background-image: url("images/car1.png");
+    background-position: -50px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+.container .card1 h3 {
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    margin-top: 40px;
+}
+
+.container .card1 .card1-btn {
+    padding: 10px;
+    background-color: white;
+    color: #f4b80d;
+    position: relative;
+    top: 230px;
+    left: 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold
+}
+
+
+/* ****************************************************************** */
+
+.container .card2 {
+    background-image: url("images/car2.png");
+    background-position: 60px 150px;
+    background-size: 130px;
+    background-repeat: no-repeat;
+}
+
+.container .card2 h3 {
+    transform: translate(5px, -5px);
+    margin-left: 0px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.container .card2 h3 span {
+    color: #a6a2a0;
+}
+
+.container .card2 .pos-car {
+    width: 220px;
+    height: 57px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 20px 15px;
+    border-top: 3px solid rgba(143, 141, 141, 0.189);
+    box-shadow: 2px -3px white;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    text-align: left
+}
+
+.container .card2 .pos-car img {
+    position: relative;
+    top: -43px;
+    left: 160px;
+    width: 50px;
+    height: 45px;
+}
+
+.container .card2 p {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 12px
+}
+
+.container .card2 span {
+    color: rgba(11, 187, 105, 0.822);
+    font-size: 10px
+}
+
+.container .card2 .car-info {
+    position: relative;
+    top: 75px;
+    left: 0px;
+    padding: 10px;
+    margin: 1px;
+    width: 100%
+}
+
+.container .card2 .car-info th {
+    font-size: 12px;
+    padding: 5px 5px 5px 1px;
+    font-size: 9px;
+    color: #a6a2a0;
+    ;
+}
+
+.container .card2 .car-info td {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container .card2 .card2-btn {
+    background-color: #f4b80d;
+    color: white;
+    top: 83px;
+    padding: 10px;
+    position: relative;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold
+}
+
+
+/* ******************************************************************** */
+
+.container .card3 h3 {
+    transform: translate(5px, 7px);
+    color: #000;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.container .card3 {
+    background-image: url("images/car3.png");
+    background-repeat: no-repeat;
+    background-position: 5px 140px;
+    background-size: 250px;
+}
+
+.container .card3 .menu {
+    position: relative;
+    top: 25px;
+    left: -10px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.container .card3 .menu .nav-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 10px;
+    list-style-type: none;
+    color: grey;
+}
+
+.container .card3 .menu .nav-menu li {
+    border-bottom: 3px solid grey;
+    width: 100%;
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+.container .card3 .menu .nav-menu .active {
+    color: #f4b80d;
+    border-bottom: 3px solid #f4b80d;
+}
+
+.container .card3 .menu .nav-menu li:hover {
+    color: #f4b80d;
+    border-bottom: 3px solid #f4b80d;
+}
+
+.container .card3 .color-dot {
+    position: relative;
+    top: 220px;
+    left: 0px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.container .card3 .color-dot .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container .card3 .color-dot .dot #white,
+.container .card3 .color-dot .dot #grey,
+.container .card3 .color-dot .dot #yellow,
+.container .card3 .color-dot .dot #red,
+.container .card3 .color-dot .dot #blue {
+    cursor: pointer;
+}
+
+.container .card3 .color-dot #white {
+    background-color: white;
+}
+
+.container .card3 .color-dot #white:hover {
+    transform: translate(-5px, -5px) scale(1);
+    box-shadow: 0px 0px 15px 10px white;
+    background-color: #fff;
+    transition: 0.6s ease;
+}
+
+.container .card3 .color-dot #grey {
+    background-color: #e0e4ed;
+}
+
+.container .card3 .color-dot #grey:hover {
+    transform: translate(-5px, -5px) scale(1);
+    box-shadow: 0px 0px 15px 10px grey;
+    background-color: rgb(163, 158, 158);
+    transition: 0.6s ease;
+}
+
+.container .card3 .color-dot #yellow {
+    background-color: #f4b80d;
+    box-shadow: 0px 0px 5px 5px #f4b80d;
+}
+
+.container .card3 .color-dot #yellow:hover {
+    transform: translate(-5px, -5px) scale(1);
+    box-shadow: 0px 0px 15px 10px #f4b80d;
+    background-color: #ca970a;
+    transition: 0.6s ease;
+}
+
+.container .card3 .color-dot #red {
+    background-color: rgb(247, 70, 0);
+}
+
+.container .card3 .color-dot #red:hover {
+    transform: translate(-5px, -5px) scale(1);
+    box-shadow: 0px 0px 15px 10px rgb(247, 70, 0);
+    background-color: red;
+    transition: 0.6s ease;
+}
+
+.container .card3 .color-dot #blue {
+    background-color: rgb(18, 9, 144);
+}
+
+.container .card3 .color-dot #blue:hover {
+    transform: translate(-5px, -5px) scale(1);
+    box-shadow: 0px 0px 15px 10px rgb(18, 9, 144);
+    background-color: blue;
+    transition: 0.6s ease;
+}
+
+.container .card3 .foot {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    transform: translate(0px, 250px);
+    justify-content: space-between
+}
+
+.container .card3 .card3-btn {
+    background-color: #f4b80d;
+    color: white;
+    padding: 10px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: translateX(100px);
+}
+
+.container .card3 p {
+    font-weight: bold;
+    font-size: 12px;
+    transform: translateY(10px);
+}
+
+
+/* ************************************************************************ */
+
+.container .card4 h3 {
+    transform: translate(5px, 5px);
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+}
+
+.container .card4 .loading {
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+    transform: translate(5px, 20px);
+}
+
+.container .card4 .loading .notification {
+    width: 40px;
+    height: 40px;
+    transform: translate(80px, 1px);
+    border-radius: 40%;
+    border: 3px solid #d3d3d3;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.container .card4 .loading .notification::before {
+    content: "2";
+    color: #fff;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: #17b867;
+    border: 3px solid #fff;
+    box-shadow: 0 0 6px 1.5px #fff;
+    padding: 2px 5px;
+    position: absolute;
+    left: 20px;
+    top: -4px;
+    text-align: center;
+}
+
+.container .card4 .loading .class-sekelton {
+    width: 220px;
+    height: 45px;
+    margin-bottom: 0px
+}
+
+.container .card4 .loading .side-image {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 25%;
+    margin: 8px;
+}
+
+.container .card4 .loading .line {
+    background-color: #ddd;
+    height: 8px;
+    margin: 5px;
+    border-radius: 7px;
+    float: left;
+}
+
+.container .card4 .loading #c1-line1 {
+    position: relative;
+    top: 7px;
+    left: -10px;
+    width: 40px;
+}
+
+.container .card4 .loading #c1-line2 {
+    position: relative;
+    top: 7px;
+    left: -15px;
+    border-radius: 7px;
+    width: 90px;
+}
+
+.container .card4 .loading #c1-line3 {
+    position: relative;
+    top: 5px;
+    left: -10px;
+    border-radius: 7px;
+    width: 90px;
+}
+
+.container .card4 .loading #c2-line1 {
+    position: relative;
+    top: 5px;
+    left: -10px;
+    border-radius: 7px;
+    width: 120px;
+}
+
+.container .card4 .loading #c2-line2 {
+    position: relative;
+    top: 5px;
+    left: -15px;
+    border-radius: 7px;
+    width: 20px;
+}
+
+.container .card4 .loading #c2-line3 {
+    position: relative;
+    top: 5px;
+    left: -10px;
+    border-radius: 7px;
+    width: 70px;
+}
+
+.container .card4 .loading #c3-line1 {
+    position: relative;
+    top: 5px;
+    left: -10px;
+    border-radius: 7px;
+    width: 140px;
+}
+
+.container .card4 .loading #c3-line2 {
+    position: relative;
+    top: 5px;
+    left: -10px;
+    border-radius: 7px;
+    width: 90px;
+}
+
+.container .card4 .note {
+    color: rgba(166, 162, 160, 0.652);
+    padding: 5px 10px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    transform: translate(0, 15px);
+}
+
+.container .card4 .note-btn {
+    color: #fff;
+    width: 90%;
+    background-color: #f4b80d;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    transform: translate(5px, 30px);
+}
+
+.container .card4 .allow {
+    color: rgba(166, 162, 160, 0.652);
+    padding: 5px 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 11px;
+    transform: translate(0, 35px);
+}
+
+
+/* ******************************************************************************** */
+
+.container .card5 .setting {
+    display: grid;
+    grid-template-columns: auto;
+    width: 250px;
+    height: 100px;
+    transform: translate(-20px, 10px);
+    justify-content: space-between;
+    text-align: left
+}
+
+
+/* Toggle Button */
+
+.toggle {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 0px;
+    top: 5px;
+    left: 120px
+}
+
+
+/* To create surface of toggle button */
+
+.toggle:after {
+    content: '';
+    width: 40px;
+    height: 15px;
+    display: inline-block;
+    background: rgba(196, 195, 195, 0.55);
+    border-radius: 18px;
+    clear: both;
+}
+
+.toggle:before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: -2px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* check event */
+
+.toggle:checked:before {
+    left: 30px;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Background color when toggle button will be active */
+
+.toggle:checked:after {
+    background: #17b867;
+}
+
+
+/* Transition */
+
+.toggle,
+.toggle:before,
+.toggle:after,
+.toggle:checked:before,
+.toggle:checked:after {
+    transition: ease .3s;
+}
+
+
+/* select list style */
+
+.select {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    left: 110px;
+    border: none;
+    background-color: #f2f2f2;
+    transition: ease .3s;
+}
+
+
+/*settings fields style */
+
+.container .card5 .setting ul {
+    list-style-type: none;
+    border-bottom: 1px solid #e0e4ed;
+    padding-left: 0px;
+    width: 250px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.container .card5 .setting ul .set {
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.container .card5 .setting ul .set-detail {
+    color: grey;
+    font-size: 10px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.container .card5 .setting ul li {
+    padding-bottom: 10px;
+}
+
+.container .card5 .setting ul li span {
+    color: rgba(255, 0, 0, 0.827);
+}
+
+
+/* ******************************************************* */
+
+.container .card6 .top-bar a {
+    color: #000;
+}
+
+.container .card6 .avatar img {
+    display: grid;
+    transform: translate(5px, 20px);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.container .card6 .information {
+    display: grid;
+    grid-template-columns: auto;
+    transform: translate(-20px, 50px);
+    justify-content: space-between;
+    text-align: left;
+}
+
+.container .card6 .information ul {
+    list-style-type: none;
+    border-bottom: 1px solid #e0e4ed;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    width: 250px;
+    padding-bottom: 5px;
+}
+
+.container .card6 .information ul .info {
+    color: grey;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.container .card6 .information ul .value {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.container .card6 .information ul #pass {
+    -webkit-text-security: disc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px bold;
+}

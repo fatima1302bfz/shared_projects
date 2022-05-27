@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+    <link rel="stylesheet" href="style_grid.css">
+    <title>challenge</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card1">
+            <div class="top-bar">
+                <i class="fa-solid fa-equals"></i>
+                <i>&nbsp; &nbsp;</i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3>
+                Join us on an <br /> #untaggable journey
+            </h3>
+            <!-- button for card 1 -->
+            <button class="card1-btn" type=" submit ">Explore</button>
+        </div>
+        <div class="card2">
+            <div class="top-bar">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <i>&nbsp; &nbsp;</i>
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <!-- text & image position -->
+            <h3><span>Overview</span> <br> Audi Q2 2.0 TDI</h3>
+            <div class="pos-car">
+                <p><span>Best deal</span><br>Audi Downtown <br> Boston </p>
+                <img src="images/pos-image.jpg" alt="position">
+            </div>
+            <!-- car information -->
+            <table class="car-info">
+                <tr>
+                    <th>POWER</th>
+                    <th>O-BD MPH</th>
+                    <th>TOP SPEED</th>
+                </tr>
+                <tr>
+                    <td>147 bhp</td>
+                    <td>7.8 sec</td>
+                    <td>131 mph</td>
+                </tr>
+            </table>
+            <!-- button for card 2 -->
+            <button class="card2-btn" type=" submit ">All specs</button>
+        </div>
+        <div class="card3">
+            <!-- icons -->
+            <div class="top-bar">
+                <i class="fa fa-arrow-left"></i>
+                <i></i>
+            </div>
+            <h3>New Audi Q2</h3>
+            <!-- main menu -->
+            <div class="menu">
+                <ul class="nav-menu">
+                    <li class="active">Exterior</li>
+                    <li>Interior</li>
+                    <li>Engines</li>
+                </ul>
+            </div>
+            <!-- colors bar -->
+            <div class="color-dot">
+                <span class="dot" id="white"></span>
+                <span class="dot" id="grey"></span>
+                <span class="dot" id="yellow"></span>
+                <span class="dot" id="red"></span>
+                <span class="dot" id="blue"></span>
+            </div>
+            <!-- price & button next -->
+            <div class="foot">
+                <p>$29,247</p>
+                <button class="card3-btn" type=" submit ">Next</button></div>
+        </div>
+        <div class="card4">
+            <!-- icons -->
+            <div class="top-bar">
+                <i class="fa fa-arrow-left"></i>
+                <i></i>
+            </div>
+            <h3>Want to be updated ?</h3>
+            <!-- sekelton loading  -->
+            <div class="loading">
+                <div class="notification"></div>
+                <div class="class-sekelton">
+                    <div class="side-image"></div>
+                    <div class="line" id="c1-line1">
+
+                    </div>
+                    <div class="line" id="c1-line2"></div>
+                    <div class="line" id="c1-line3"></div>
+                </div>
+
+                <div class="class-sekelton">
+                    <div class="side-image"></div>
+                    <div class="line" id="c2-line1">
+
+                    </div>
+                    <div class="line" id="c2-line2"></div>
+                    <div class="line" id="c2-line3"></div>
+                </div>
+
+                <div class="class-sekelton">
+                    <div class="side-image"></div>
+                    <div class="line" id="c3-line1"></div>
+                    <div class="line" id="c3-line2"></div>
+                </div>
+                <!-- texts & button -->
+                <p class="note">Get notifications <br />and update in real time</p>
+                <button class="note-btn" type="submit">Enable push notification</button>
+                <p class="allow">Do not allow</p>
+            </div>
+        </div>
+        <div class="card5">
+            <!-- icons -->
+            <div class="top-bar">
+                <i class="fa fa-arrow-left"></i>
+                <p>Settings</p>
+                <i>&nbsp; &nbsp;</i>
+            </div>
+            <!-- settings fields -->
+            <div class="setting">
+                <ul>
+                    <li class="set"> PIN lock <input type="checkbox" name="checkbox" class="toggle" id="toggle1">
+                    </li>
+
+                    <li class="set-detail"> Use PIN to logIn to your account
+                    </li>
+                </ul>
+                <ul>
+                    <li class=" set "> Touch ID <input type="checkbox" name="checkbox" class="toggle" id="toggle2" checked></li>
+                    <li class="set-detail "> Enable touch ID for all transaction </li>
+                </ul>
+                <ul>
+                    <li class="set "> Currency
+                        <select class="select">
+                            <option value="usd" selected="selected">USD</option>
+                            <option value="dzd">DZD</option>
+                            <option value="eur">EUR</option>
+                            <option value="usd">USD</option>
+                        </select>
+                    </li>
+                    <li class="set-detail "> Choose a currency to display the rates </li>
+                </ul>
+                <ul>
+                    <li class="set "> Password</li>
+                    <li class="set-detail ">Change your account password</li>
+                </ul>
+                <ul>
+                    <li class="set "> Desactivate account</li>
+                    <li class="set-detail ">Temporarly desactivate your account</li>
+                </ul>
+                <ul>
+                    <li class="set "> <span>Delete account</span> </li>
+                    <li class="set-detail ">Close all your account data</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card6">
+            <!-- icons -->
+            <div class="top-bar ">
+                <i class="fa fa-arrow-left "></i> Profile
+                <a href="# ">Edit</a>
+            </div>
+            <!-- profile image -->
+            <div class="avatar "><img src="images/avatar.jpeg" alt="loading.. "></div>
+            <!-- profile information fields -->
+            <div class="information ">
+                <ul>
+                    <li class="info "> Name</li>
+                    <li class="value "> Cristopher Wallace</li>
+                </ul>
+                <ul>
+                    <li class="info "> Mobile</li>
+                    <li class="value "> +91 1247 777 004</li>
+                </ul>
+                <ul>
+                    <li class="info "> Email</li>
+                    <li class="value "> c.wallace@info.com</li>
+                </ul>
+                <ul>
+                    <li class="info "> Password</li>
+                    <li class="value " id="pass">...........</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
